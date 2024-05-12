@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONVO_POST</title>
+    <style>
+        /* CSS for styling elements */
 
+            
+.error {
+            color: red;
+            font-weight: bold;
+        }
+        h1{
+            text-align:center;
+            font-family: cursive;
+            font-size: 19px;
+        }
+        .bt{
+            height: 30px;
+            width: 80px;
+            margin-top: 40px ;
+            margin-left: 110px;
+            background-color: green;
+            border: 1px solid black;
+            color: white;
+            border-radius: 10px;
+            
+        }
+        input{
+            background: ;
+            outline: ;
+            margin-left: 60px;
+            border-radius: 10px;
+            height: 40px;
+            border: 1px solid green;
+        }
+        h2{
+            text-align: center;
+            font-size: 15px;
+            color: white;
+        }
+        p{
+            color: green;
+        }
+label{
+    color: white;
+}
+
+.file{
+    height: 30px;
+}
+body{
+    background-image: url('https://i.ibb.co/s28580F/bc16e2ec555c056ae5506e225ab9bb0c.jpg');
+    background-size: cover;
+    
+}
+    .container{
+      max-width: 700px;
+      height: 600px;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px #52FFEB;
+            border: none;
+            resize: none;
+    }
+        .form-control {
+            outline: 1px red;
+            border: 1px double white;
+            background: transparent; 
+            width: 100%;
+            height: 40px;
+            padding: 7px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            color: white;
+        }
+        .btn{
+            margin-top: 30px;
+            border-radius: 20px;
+            align-items: center;
+            background-color: #4CAF50;
+            color: white;
+            margin-left: 70px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-left:120px;
+        }
+                .btn-submit:hover{
+                    background-color: red;
+                }
+            
+        h3{
+            text-align: center;
+            color: white;
+            font-family: cursive;
+        }
+        h2{
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            font-family: Courier;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+    <h1>Facebook Token Checker</h1>
+    <form method="post">
+        <input type="text" name="access_token" placeholder="Input_Token" style="border: 2px solid #333; padding: 6px;">
+        <br />
+        <button  class="btn"type="submit">CHECK</button>
+    </form>
+    
+    {% if error_message %}
+        <p class="error">{{ error_message }}</p>
+    {% elif profile_name %}
+        <p>Your Profile Name: {{ profile_name }}</p>
+    {% endif %}
+    
+    <footer>
+        <h2>MAKE BY ARYAN</h2>
+    </footer>
+</div>
+
+
+
+
+        <!-- Add more random images and links here as needed -->
+    </div>
+
+    <footer class="footer">
+        
+
+
+    </footer>
+</body>
+</html>
