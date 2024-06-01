@@ -26,4 +26,4 @@ def index():
     return render_template('index.html', profile_name=profile_name, error_message=error_message)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
